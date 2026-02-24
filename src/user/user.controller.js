@@ -133,4 +133,4 @@ export const changePassword = async (req, res) => {
             message: 'Fallo interno al intentar modificar la contraseña.',
         });
     }
-};
+}; 

@@ -33,7 +33,7 @@ const publicationSchema = new Schema(
         },
         status: {
             type: String,
-            enum: ['active', 'deleted'],
+            enum: ['active', 'deleted'], 
             default: 'active',
         },
     },

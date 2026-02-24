@@ -16,4 +16,4 @@ process.on('unhandledRejection', (reason) => {
 });
 
 console.log('Iniciando gestoropiniones...');
-initServer();
+initServer(); 

@@ -100,7 +100,7 @@ export const initServer = async () => {
             console.log(`Health: http://localhost:${PORT}${BASE_PATH}/health`);
 
         });
-
+ 
     } catch (error) {
         console.error('ERROR: al iniciar el servidor:', error.message);
         process.exit(1);

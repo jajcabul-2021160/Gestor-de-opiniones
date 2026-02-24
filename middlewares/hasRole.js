@@ -5,7 +5,7 @@
 export const hasRole = (...roles) => {
     return (req, res, next) => {
         if (!req.user) {
-            return res.status(500).json({
+            return res.status(500).json({ 
                 success: false,
                 message: 'Se necesita validar el token antes de verificar el rol',
             });

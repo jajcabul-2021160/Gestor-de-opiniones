@@ -10,7 +10,7 @@ import {
 import { validatePublication } from '../../middlewares/validation.js';
 
 const router = Router();
-// get
+// get 
 router.get('/', getPublications);
 // get
 router.get('/my', getMyPublications);

@@ -80,7 +80,7 @@ export const getCommentsByPublication = async (req, res) => {
 
 export const updateComment = async (req, res) => {
     try {
-        const { commentId } = req.params;
+        const { commentId } = req.params; 
         const { content } = req.body;
 
         const comment = await Comment.findOne({ _id: commentId, status: 'active' });

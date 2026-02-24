@@ -43,6 +43,6 @@ export const validatePasswordStrength = (password) => {
 
     return {
         isValid: errors.length === 0,
-        errors,
+        errors, 
     };
 };

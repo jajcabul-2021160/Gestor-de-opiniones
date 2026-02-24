@@ -10,7 +10,7 @@ const commentSchema = new Schema(
     },
      publication: {
         type: Schema.Types.ObjectId,
-        ref: 'Publication',
+        ref: 'Publication', 
         required: true,
     },
     author: {

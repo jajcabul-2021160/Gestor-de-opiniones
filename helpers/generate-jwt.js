@@ -47,7 +47,7 @@ export const generateVerificationToken = (userId, type, expiresIn = '24h') => {
         jwt.sign(payload, config.jwt.secret, signOptions, (err, token) => {
             if (err) reject(err);
             else resolve(token);
-        });
+        }); 
     });
 };
 export const verifyVerificationToken = (token) => verifyJWT(token);

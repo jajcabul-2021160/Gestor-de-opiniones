@@ -67,7 +67,7 @@ export const validateUpdateProfile = [
         .notEmpty().withMessage('El nombre no puede estar vacío')
         .isLength({ max: 25 }).withMessage('El nombre no puede tener más de 25 caracteres')
         .matches(/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/).withMessage('El nombre solo puede contener letras'),
-    body('surname')
+    body('surname') 
         .optional()
         .trim()
         .notEmpty().withMessage('El apellido no puede estar vacío')

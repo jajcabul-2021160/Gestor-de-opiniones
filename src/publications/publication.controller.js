@@ -212,7 +212,7 @@ export const getMyPublications = async (req, res) => {
             page: parseInt(page),
             totalPages: Math.ceil(total / parseInt(limit)),
             publications,
-        });
+        }); 
     } catch (error) {
         console.error('Error en getMyPublications:', error);
         return res.status(500).json({

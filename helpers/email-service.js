@@ -5,7 +5,7 @@ const createTransporter = () => {
     if (!config.smtp.username || !config.smtp.password) {
         console.warn('SMTP no configurado. El envío de emails no va a funcionar.');
         return null;
-    }
+    } 
 
     return nodemailer.createTransport({
         host: config.smtp.host,

@@ -10,3 +10,4 @@ router.put('/profile', validateUpdateProfile, updateProfile);
 // put
 router.put('/change-password', validateChangePassword, changePassword);
 export default router;
+ 

@@ -11,4 +11,4 @@ router.post('/login', [authRateLimit, validateLogin], login);
 router.post('/verify-email', validateVerifyEmail, verifyEmail);
 router.post('/resend-verification', emailRateLimit, resendVerification);
 
-export default router;
+export default router; 

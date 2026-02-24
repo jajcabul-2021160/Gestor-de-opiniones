@@ -12,5 +12,5 @@ router.post('/publication/:id', validateComment, createComment);
 // put (editar)
 router.put('/:commentId', validateComment, updateComment);
 // delete (eliminar)
-router.delete('/:commentId', deleteComment);
+router.delete('/:commentId', deleteComment); 
 export default router;

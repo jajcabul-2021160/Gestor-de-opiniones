@@ -7,7 +7,7 @@ export const requestLimit = rateLimit({
     standardHeaders: true,
     legacyHeaders: false,
     handler: (req, res) => {
-        res.status(429).json({
+        res.status(429).json({ 
             success: false,
             message: 'Demasiadas peticiones desde esta IP, intentalo más tarde',
             retryAfter: Math.ceil(config.rateLimit.windowMs / 1000),
